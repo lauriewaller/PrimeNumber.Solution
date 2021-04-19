@@ -10,10 +10,10 @@ namespace Prime
     public static void Main()
     {
       Console.WriteLine("Enter a number to find all prime numbers below or including the number:");
-      int input = int.Parse(Console.ReadLine());
+      string userInput = Console.ReadLine();
+      int input = int.Parse(userInput);
 
-      Console.WriteLine(
-          "Following are the prime numbers");
+      Console.WriteLine("Here are the prime numbers");
       Console.WriteLine("smaller than or equal to " + input);
       PrimeNumbers.PrimeMethod(input);
 
